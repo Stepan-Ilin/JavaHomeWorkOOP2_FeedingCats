@@ -70,6 +70,7 @@ public class MainClass {
         for (int i = 0; i < numberCats ; i++) {
             cats[i] = new Cat("Котик_" + i, rnd.nextInt(1,maxAppetite) ); // тут появились котики
         }
+
         System.out.println("----- До кормёшки -----");
         Cat cat = new Cat("Barsik", 5); // родился Барсик
         System.out.println(cat);

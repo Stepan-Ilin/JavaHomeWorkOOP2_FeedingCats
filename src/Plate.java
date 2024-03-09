@@ -9,7 +9,8 @@ public class Plate {
 
     //region Метод добавления еды в тарелку
     public void addFood(int food){
-        this.food += food;
+        if(food>0)
+            this.food += food;
     }
     //endregion
 

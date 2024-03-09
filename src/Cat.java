@@ -1,6 +1,6 @@
 public class Cat {
-    private String name;
-    private int appetite;
+    private final String name;
+    private final int appetite;
     private boolean satiety = false;
 
     public Cat(String name, int appetite) {
