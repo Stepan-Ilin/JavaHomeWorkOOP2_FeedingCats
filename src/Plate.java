@@ -7,6 +7,12 @@ public class Plate {
         System.out.println("plate: " + food);
     }
 
+    //region Метод добавления еды в тарелку
+    public void addFood(int food){
+        this.food += food;
+    }
+    //endregion
+
     public int getFood() {
         return food;
     }
