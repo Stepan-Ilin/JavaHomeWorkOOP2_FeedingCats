@@ -24,10 +24,6 @@ public class Cat {
         this.satiety = satiety;
     }
 
-    public boolean isSatiety() {
-        return satiety;
-    }
-
     public int getAppetite() {
         return appetite;
     }
