@@ -77,7 +77,7 @@ public class MainClass {
         for (Cat elem : cats)
             System.out.println(elem);   // голодная свора
 
-        Plate plate = new Plate(100); // ...и тут тарека нашлась, да еще и с едой...
+        Plate plate = new Plate(100); // ...и тут тарелка нашлась, да еще и с едой...
         plate.info();
         System.out.println("\n------ Добавка еды -----");
         plate.addFood(20); // добавка еды в тарелку

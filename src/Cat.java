@@ -10,22 +10,17 @@ public class Cat {
     }
 
     public void eat(Plate plate) {
-        int deltaFood = plate.getFood() - getAppetite();
-        if (deltaFood >= 0) {
+        int result = plate.reductionFood(appetite);
+        if (result >= 0) {
             setSatiety(true);
-            plate.setFood(deltaFood);
         }else {
-            System.out.println("Не хватило " + (-1 * deltaFood) + " еды котику " + name + " с аппетитом " + appetite + "." );
+            System.out.println("Не хватило " + (-1 * result) + " еды котику " + name + " с аппетитом " + appetite + "." );
             plate.info();
         }
     }
 
     public void setSatiety(boolean satiety) {
         this.satiety = satiety;
-    }
-
-    public int getAppetite() {
-        return appetite;
     }
 
     @Override
